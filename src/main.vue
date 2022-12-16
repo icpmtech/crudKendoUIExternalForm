@@ -1,4 +1,5 @@
 <template>
+  <h1>Edit Maturity Matrix</h1>
   <div class="example-wrapper">
     <TreeList
       :dataItems="controls"

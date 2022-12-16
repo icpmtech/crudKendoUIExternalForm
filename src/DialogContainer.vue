@@ -12,25 +12,23 @@
         </div>
       </div>
       <div class="k-form-field">
-        <label for="Position" class="k-form-label">Position</label>
+        <label for="Position" class="k-form-label">Maturity Atual</label>
         <div class="k-form-field-wrap">
           <KInput
             :style="{ width: '230px' }"
-            :name="'Position'"
-            v-model="employeeInEdit.position"
+            :name="'Maturity Atual'"
+            v-model="employeeInEdit.maturityAtual"
           ></KInput>
         </div>
       </div>
       <div class="k-form-field">
-        <KLabel :editor-id="'FullTime'"> FullTime </KLabel>
+        <KLabel :editor-id="'FullTime'"> Maturity Expected </KLabel>
         <div class="k-form-field-wrap">
-          <span>
-            <checkbox
-              :name="'FullTime'"
-              :id="'fullTime'"
-              v-model="employeeInEdit.fullTime"
-            />
-          </span>
+          <KInput
+            :name="'Maturity Expected'"
+            :id="'maturityExpected'"
+            v-model="employeeInEdit.maturityExpected"
+          />
         </div>
       </div>
     </div>
